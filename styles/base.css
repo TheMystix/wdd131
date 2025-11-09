@@ -72,7 +72,7 @@ nav {
     background-color: var(--secondary-color);
     padding: 1rem 0;        
     margin-top: 1rem;
-    font: var(--accent-color2);   
+    color: var(--accent-color2);   
 }
 
 nav ul {
@@ -131,7 +131,6 @@ nav a:hover {
     border-radius: 2rem;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     flex: 1 1 300px;
-    padding: rem;
     line-height: 1.6;
 }
 
