@@ -9,13 +9,16 @@
 
 }
 
-header, footer {
+header{
     background-color: var(--primary-color);
     text-align: center;
     padding-top: 1rem;
 }
 
 footer  {
+    background-color: var(--primary-color);
+    text-align: center;
+    padding-top: 1rem;
     padding-bottom: 1rem;
     color: white;
     font-size: 1.1rem;
@@ -104,7 +107,7 @@ nav a:hover {
     text-decoration-thickness: 2px;
 }
 
-.card1, .card2 {
+.card {
     border: 1px solid black;
     border-radius: 2rem;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
@@ -112,12 +115,11 @@ nav a:hover {
     padding: 1rem;
 }
 
-.card2 {
+.card:nth-child(2){
     max-width: 400px;
 }
 
-.card1 > h2,
-.card2 > h2 {
+.card > h2 {
     text-align: center;
     background-color: var(--primary-color);
     color: var(--accent-color2);
@@ -126,7 +128,7 @@ nav a:hover {
     border-radius: 2rem 2rem 0 0;
 }
 
-.card1 p, .card2 p {
+.card {
     line-height: 1.6;
 }
 
