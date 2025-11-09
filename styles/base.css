@@ -100,8 +100,8 @@ nav a:hover {
     padding: 0;
     border-radius: 0;
     text-decoration: underline;
-    text-decoration-color: gray; /* Optional: Customize color */
-    text-decoration-thickness: 2px; /* Optional: Customize thickness */
+    text-decoration-color: gray;
+    text-decoration-thickness: 2px;
 }
 
 .card1, .card2 {
