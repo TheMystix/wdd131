@@ -1,13 +1,15 @@
 :root {
-    --primary-color: #1c7293;
-    --secondary-color: #3a3335;
+    --primary-color: #441742;
+    --secondary-color: #19241c;
     --accent-color1: #06ba53;
     --accent-color2: #fff;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: "Quintessential", serif;
+    font-weight: 400;
+    font-style: normal;
     max-width: 1440px;
     margin: 0 auto;
-
 }
+
 
 header{
     background-color: var(--primary-color);
@@ -112,7 +114,7 @@ nav a:hover {
     border-radius: 2rem;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     flex: 1 1 300px;
-    padding: 1rem;
+    padding: rem;
 }
 
 .card:nth-child(2){
