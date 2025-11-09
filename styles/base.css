@@ -1,0 +1,151 @@
+:root {
+    --primary-color: #1c7293;
+    --secondary-color: #3a3335;
+    --accent-color1: #06ba53;
+    --accent-color2: #fff;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    max-width: 1440px;
+    margin: 0 auto;
+
+}
+
+header, footer {
+    background-color: var(--primary-color);
+    text-align: center;
+    padding-top: 1rem;
+}
+
+footer  {
+    padding-bottom: 1rem;
+    color: white;
+    font-size: 1.1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+.modified {
+   color: yellow;
+   font-size: 0.9rem;}
+
+#course-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--accent-color2);
+}
+
+#name {
+    color: yellow;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-left: 0.3rem;   
+}
+
+nav {
+    background-color: var(--secondary-color);
+    padding: 1rem 0;        
+    margin-top: 1rem;   
+}
+
+nav ul {
+    display: flex;
+    justify-content: center; 
+    gap: 5rem;              
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 1.25rem;
+}
+
+nav a,
+nav a:visited,
+nav a:active,
+nav a:focus {
+    color: white;
+    text-decoration: none;          
+}
+
+nav a:hover {
+    text-decoration: overline dotted;  
+}
+
+.name {
+    text-align: center;
+    color: black;
+    margin-bottom: 2rem;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 2rem 1rem;
+}
+
+.state-container .state-title {
+    color: black;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin: 1rem 0 0.5rem 0;
+    display: block;
+    text-align: center;
+    background: none;
+    padding: 0;
+    border-radius: 0;
+    text-decoration: underline;
+    text-decoration-color: gray; /* Optional: Customize color */
+    text-decoration-thickness: 2px; /* Optional: Customize thickness */
+}
+
+.card1, .card2 {
+    border: 1px solid black;
+    border-radius: 2rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    flex: 1 1 300px;
+    padding: 1rem;
+}
+
+.card2 {
+    max-width: 400px;
+}
+
+.card1 > h2,
+.card2 > h2 {
+    text-align: center;
+    background-color: var(--primary-color);
+    color: var(--accent-color2);
+    margin-top: 0;
+    padding: 0.5rem 0;
+    border-radius: 2rem 2rem 0 0;
+}
+
+.card1 p, .card2 p {
+    line-height: 1.6;
+}
+
+.card-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.card-row img {
+    max-width: 200px;
+    height: auto;
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+
+.card-row p {
+    flex: 1 1 0;
+    line-height: 1.6;
+}
