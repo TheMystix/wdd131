@@ -1,28 +1,37 @@
 :root {
-    --primary-color: #441742;
-    --secondary-color: #19241c;
+    --primary-color: #1c7293;
+    --secondary-color: #3a3335;
     --accent-color1: #06ba53;
     --accent-color2: #fff;
-    font-family: "Quintessential", serif;
-    font-weight: 400;
-    font-style: normal;
     max-width: 1440px;
     margin: 0 auto;
 }
 
+body {
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+h1, h2 {
+    font-family: 'Quintessential', serif;
+}
+
+nav a {
+    font-family: 'Varela Round', sans-serif;
+}
 
 header {
     background-color: var(--primary-color);
     text-align: center;
     padding-top: 1rem;
+    font-family: 'Quintessential', sans-serif;
 }
 
 main {
     padding: 2rem 1rem;
-    display: grid
+    display: grid;
 }
 
-footer  {
+footer {
     background-color: var(--primary-color);
     text-align: center;
     padding-top: 1rem;
@@ -42,7 +51,8 @@ footer p {
 
 .modified {
    color: yellow;
-   font-size: 0.9rem;}
+   font-size: 0.9rem;
+}
 
 #course-title {
     font-size: 1.5rem;
