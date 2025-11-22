@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jedediah Rudy">
+    <meta name="description" content="Country Page for WDD 131 - Dynamic Web Fundamentals - Jedediah Rudy">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quintessential&family=Varela+Round&display=swap" rel="stylesheet">
+    <script src="scripts/place.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Japan</h1>
+    </header>
+        <main>
+            <div class="hero">
+                <picture>
+                    <source srcset="images/fuji.webp" media="(min-width: 801px)">
+                    <source srcset="images/gion.webp" media="(max-width: 800px)">
+                    <img src="images/gion.webp" alt="Japan scenery" class="responsive">
+                </picture>
+
+                <div class="info-box info-left">
+                    <h2>Data</h2>
+                    <ul>
+                        <li><strong>Area:</strong> <span>145,937 sq mi</span></li>
+                        <li><strong>Population:</strong> <span>123.4 million</span></li>
+                        <li><strong>Capital:</strong> <span>Tokyo</span></li>
+                        <li><strong>Languages:</strong> <span>Japanese</span></li>
+                        <li><strong>Currency:</strong> <span>Japanese Yen</span></li>
+                        <li><strong>Time Zone:</strong> <span>UTC+9</span></li>
+                        <li><strong>Calling Code:</strong> <span>+81</span></li>
+                        <li><strong>Internet TLD:</strong> <span>.jp</span></li>
+                    </ul>
+                </div>
+
+                <div class="info-box info-right">
+                    <h2>Weather <span class="emoji">🌤️</span></h2>
+                    <ul>
+                        <li><strong>Temperature:</strong><span id="temperature"></span></li>
+                        <li><strong>Conditions:</strong> <span>Partly Cloudy</span></li>
+                        <li><strong>Wind:</strong> <span id="windspeed"></li>
+                        <li><strong>Wind Chill:</strong> <span id="windchill"></span></li>
+                    </ul>
+                </div>
+            </div>
+
+    </main>    
+    </body>        
+    <footer>
+        <p>&copy; <span id="currentyear"></span> 🐴 Jedediah Rudy 🐴 United States</p>
+            <div class="modified">
+                <p>Last modified: <span id="lastmodified"></span></p>
+            </div>
+    </footer>
+</body>
+</html>
