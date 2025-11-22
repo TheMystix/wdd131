@@ -45,3 +45,9 @@
     width: 300px;
     text-align: left;
 }
+.weather-icon {
+    width: 24px;
+    height: 24px;
+    margin-left: 0.5rem;
+    vertical-align: middle;
+}
