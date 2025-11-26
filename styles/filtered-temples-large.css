@@ -1,0 +1,41 @@
+@media screen and (min-width: 800px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+    
+    #menu {
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+       
+    }
+
+    .navigation li {
+        display: block;
+    }
+
+    .navigation li a {
+        text-align: center;
+    }
+
+    main {
+        max-width: 1200px;
+    }
+
+    .figures {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

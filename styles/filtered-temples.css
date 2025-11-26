@@ -1,0 +1,135 @@
+:root {
+    --primary-color: #1c7293;
+    --secondary-color: #3a3335;
+    --accent-color1: #06ba53;
+    --accent-color2: #fff;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+body {
+    font-family: 'Montserrat Alternates', sans-serif;
+    margin: 0;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.menu-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+}
+
+#page-name {
+    font-weight: bold;
+}
+
+#menu {
+    display: block;
+    font-size: 2rem;
+    font-weight: bold;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.show::before {
+    content: "X";
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    flex-direction: column; 
+    margin-top: 0.5rem;
+}
+
+.navigation {
+    display: none;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+    padding: 0;
+    list-style: none;
+    
+}
+
+.navigation li a,
+.navigation li a:visited,
+.navigation li a:active,
+.navigation li a:focus {
+    color: white;
+    text-decoration: none;
+    font-size: 1.25rem;
+    display: block;
+    
+}
+
+.navigation li a:hover {
+    text-decoration: overline dotted;
+}
+
+.navigation.show {
+    display: flex;
+}
+
+main {
+    text-align: center;
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Quintessential', serif;
+}
+
+.figures {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 1rem;
+    margin: 0 auto;
+}
+
+figure {
+    margin: 0;
+    max-width: 250px;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 1px;
+}
+
+footer {
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 1rem;
+    color: white;
+    font-size: 1.1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    align-items: center;
+    justify-content: center;
+}
