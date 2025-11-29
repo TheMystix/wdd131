@@ -115,8 +115,7 @@ function createTempleCard(temple) {
 }
 
 function filterTemples(criteria) {
-  document.querySelector(".res-grid").innerHTML = ""; // clear results
-
+  document.querySelector(".res-grid").innerHTML = "";
   let filtered = temples;
 
   switch (criteria) {
