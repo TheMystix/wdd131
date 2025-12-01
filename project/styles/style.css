@@ -1,0 +1,13 @@
+:root {
+    background-color: black;
+    color: white;
+    font-family: "Science Gothic", sans-serif;
+}
+
+.science-gothic {
+  font-family: "Science Gothic", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  
+}
