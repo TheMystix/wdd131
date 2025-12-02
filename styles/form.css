@@ -1,0 +1,150 @@
+:root {
+    --primary-color: #1c7293;
+    --secondary-color: #3a3335;
+    --accent-color1: #06ba53;
+    --accent-color2: #fff;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: var(--primary-color);
+    text-align: center;
+    padding-top: 1rem;
+    font-family: 'Quintessential', sans-serif;
+    color: var(--accent-color2);
+}
+
+body {
+    font-family: 'Montserrat Alternates', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    margin: 15px 0;
+    font-size: 2rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    padding: 20px;
+    margin: 0 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    width: 100%;
+}
+
+label {
+    margin-bottom: 6px;
+    font-weight: 500;
+    display: block;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+.rating-row {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.rating-row label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.rating-row input {
+    margin-top: 5px;
+}
+
+.checkbox-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.checkbox-section label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #1c7293;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #155a6b;
+}
+
+footer {
+    margin-top: auto;
+    padding: 12px;
+    text-align: center;
+    background-color: #1c7293;
+    color: #fff;
+    font-size: 0.9rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+@media (max-width: 400px) {
+    form {
+        padding: 15px;
+    }
+
+    .rating-row {
+        flex-wrap: wrap;
+    }
+
+    button[type="submit"] {
+    width: 175px;
+}}
+
+footer {
+    background-color: var(--primary-color);
+    text-align: center;
+    color: white;
+    font-size: 1.1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

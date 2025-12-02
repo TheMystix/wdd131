@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    align-self: center;
+    width: 60%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Montserrat Alternates', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+
+h1 {
+    text-align: center;
+    margin: 10px 0;
+    font-size: 2.5rem;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+    background-color: #bbced1;
+    border-radius: 4px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    width: 60%;
+}
+
+
+label {
+    margin-bottom: 2px;
+    font-weight: 500;
+    display: block;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+textarea,
+select {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 1px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+
+.rating-row {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+.rating-row label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.rating-row input {
+    margin-top: 5px;
+}
+
+
+.checkbox-section {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+.checkbox-section label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+
+button[type="submit"] {
+    padding: 12px 25px;
+    background-color: #1c7293;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 175px;
+}
+
+button[type="submit"]:hover {
+    background-color: #155a6b;
+}
+
+
+footer {
+    margin-top: auto;
+    padding: 15px;
+    text-align: center;
+    background-color: #1c7293;
+    color: #fff;
+    font-size: 0.9rem;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    width: 60%;
+    align-self: center;
+}
