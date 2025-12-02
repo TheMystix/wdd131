@@ -99,7 +99,7 @@ textarea {
 }
 
 button[type="submit"] {
-    width: 100%;
+    width: 25%;
     padding: 12px;
     background-color: #1c7293;
     color: #fff;
