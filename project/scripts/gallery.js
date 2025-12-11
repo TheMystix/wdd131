@@ -1,7 +1,7 @@
 const videos = [
-  "https://www.youtube.com/shorts/56AUnrkInP4",
-  "https://www.youtube.com/shorts/br4axih3mmc",
-  "https://www.youtube.com/watch?v=8BM3Xh-j9mU"
+  "https://www.youtube.com/embed/56AUnrkInP4",
+  "https://www.youtube.com/embed/br4axih3mmc",
+  "https://www.youtube.com/embed/8BM3Xh-j9mU"
 ];
 
 const container = document.getElementById("video-container");
