@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jedediah Rudy">
+    <meta name="description" content="Contact for the website for my WDD 131 project">
+    <link rel="stylesheet" href="/project/styles/style.css">
+    <link rel="stylesheet" href="/project/styles/style-large.css" media="screen and (min-width: 800px)">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Science+Gothic:wght@100..900&display=swap" rel="stylesheet">
+    <title>The Editing Magician | Contact Me</title>
+<link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="style-large.css" media="screen and (min-width: 1200px)" />
+</head>
+<body>
+  <header>
+    <div class="logo"><img src="../project/images/logo.png" alt="My Logo" class="logo-image"></div>
+    <nav>
+      <a href="/project/index.html">Home</a>
+      <a href="/project/projects.html">Projects</a>
+      <a href="/project/hire.html">Hire</a>
+      <a href="/project/contact.html">Contact</a>
+    </nav>
+  </header>
+  <main class="contact-section">
+    <h1>Contact Me</h1>
+    <form id="contact-form">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="comment">Question</label>
+      <textarea id="comment" name="comment" rows="5" required></textarea>
+
+      <button type="submit" class="cta-button">Submit</button>
+    </form>
+    <div id="form-message"></div>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> 🐴 Jedediah Rudy 🐴 United States</p>
+            <div class="modified">
+                <p>Last modified: <span id="lastmodified"></span></p>
+  </footer>
+
+  <script src="../project/scripts/contact.js"></script>
+</body>
+</html>

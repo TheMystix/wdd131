@@ -1,13 +1,246 @@
-:root {
-    background-color: black;
-    color: white;
-    font-family: "Science Gothic", sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Science+Gothic:wght@300;400;600&display=swap');
+
+body {
+margin: 0;
+font-family: 'Science Gothic', sans-serif;
+background: linear-gradient(135deg, #00ff85, #7b00ff);
+color: #fff;
+min-height: 100vh;
+position: relative;
+overflow-x: hidden;
+text-shadow: 2px 2px 6px rgba(0,0,0,2);
 }
 
-.science-gothic {
-  font-family: "Science Gothic", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  
+
+body::before {
+content: "";
+position: fixed;
+inset: 0;
+background: url('../images/hero.jpg') center/cover no-repeat;
+mix-blend-mode: color-burn;
+opacity: 1;
+pointer-events: none;
+z-index: -1;
+}
+
+
+header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 0.8rem 1.2rem;
+background: rgba(0,0,0,0.5);
+backdrop-filter: blur(6px);
+}
+
+
+nav a {
+color: #fff;
+margin-left: 0.5rem;
+text-decoration: none;
+font-weight: bold;
+font-size: 0.9rem;
+}
+
+.logo-image {
+  height: 50px;
+  width: auto;
+  display: block;
+}
+
+
+.hero-section {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+min-height: calc(100vh - 80px);
+text-align: center;
+padding: 2rem 1rem;
+}
+
+
+.hero-text {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: flex-start;
+}
+
+
+.hero-text h1 {
+font-size: 2rem;
+margin-bottom: 1rem;
+}
+
+
+.hero-buttons {
+display: flex;
+flex-direction: row;
+gap: 0.5rem;
+margin-top: 2rem;
+}
+
+
+.cta-button {
+background-color: rgba(0,0,0,0.6);
+color: #fff;
+padding: 0.8rem 1.5rem;
+border-radius: 8px;
+text-decoration: none;
+font-weight: bold;
+transition: all 0.3s ease;
+position: relative;
+}
+
+
+.cta-button:hover {
+background: linear-gradient(135deg, #00ff85, #7b00ff);
+transform: scale(1.05);
+box-shadow: 0 0 15px rgba(0,255,133,0.6), 0 0 15px rgba(123,0,255,0.6);
+}
+
+
+.cta-button::after {
+content: '';
+position: absolute;
+width: 0;
+height: 2px;
+bottom: 0;
+left: 0;
+background: #fff;
+transition: width 0.3s;
+}
+
+
+.cta-button:hover::after {
+width: 100%;
+}
+
+
+.hero-image img {
+width: 65%;
+height: auto;
+
+border-radius: 8px;
+margin-top: 2rem;
+}
+
+
+footer {
+text-align: center;
+padding: 1.5rem;
+background: rgba(0,0,0,0.5);
+backdrop-filter: blur(6px);
+margin-top: 2rem;
+}
+
+.projects-section {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  justify-items: center;
+}
+
+.video-grid iframe {
+  width: 100%;
+  max-width: 560px;
+  height: 315px;
+}
+
+@media(min-width: 1200px){
+  .video-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.contact-section form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 500px;
+  gap: 1rem;
+}
+
+.contact-section label {
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+  text-align: left;
+}
+
+.contact-section input,
+.contact-section textarea {
+  padding: 0.8rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-family: 'Science Gothic', sans-serif;
+  font-size: 1rem;
+}
+
+.contact-section button.cta-button {
+  margin-top: 1rem;
+}
+
+.pricing-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.pricing-category {
+  margin-bottom: 2rem;
+  width: 100%;
+  max-width: 600px;
+}
+
+.pricing-category h2 {
+  margin-bottom: 0.5rem;
+}
+
+.pricing-category p {
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+.pricing-category ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.pricing-category li {
+  margin-bottom: 0.5rem;
+  background: rgba(0,0,0,0.2);
+  padding: 0.8rem;
+  border-radius: 8px;
+}
+
+@media(min-width: 1200px){
+  .pricing-section {
+    text-align: left;
+    padding: 4rem 3rem;
+  }
+
+  .pricing-category {
+    max-width: 800px;
+  }
+
+  .pricing-category li {
+    font-size: 1.1rem;
+    padding: 1rem;
+  }
 }

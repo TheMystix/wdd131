@@ -1,0 +1,101 @@
+body::before {
+  background: url('../images/hero-large.jpg') center/cover no-repeat;
+  opacity: 1;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.hero-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 80px);
+  padding: 4rem 3rem;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.hero-text {
+  flex: 1;
+  margin-right: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.hero-text h1 {
+  font-size: 3.2rem;
+}
+
+.hero-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.cta-button {
+  background-color: rgba(0,0,0,0.6);
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.cta-button:hover {
+  background: linear-gradient(135deg, #00ff85, #7b00ff);
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(0,255,133,0.6), 0 0 15px rgba(123,0,255,0.6);
+}
+
+.cta-button::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background: #fff;
+  transition: width 0.3s;
+}
+
+.cta-button:hover::after {
+  width: 100%;
+}
+
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image img {
+  height: auto;
+  border-radius: 8px;
+}
+
+nav a {
+  font-size: 1rem;
+  margin-left: 1rem;
+}
+
+footer {
+  padding: 2rem;
+}
+
+@media(min-width: 1200px){
+  .contact-section form {
+    max-width: 600px;
+  }
+}
